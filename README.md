@@ -5,9 +5,13 @@ Home: https://github.com/NeuralEnsemble/ephyviewer
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ephyviewer-feedstock/blob/master/LICENSE.txt)
 
 Summary: Simple viewers for ephys signals, events, video and more
+
+Development: https://github.com/NeuralEnsemble/ephyviewer
+
+Documentation: https://ephyviewer.readthedocs.io/
 
 ephyviewer is a Python library based on pyqtgraph for building custom
 viewers for electrophysiological signals, video, events, epochs, spike
