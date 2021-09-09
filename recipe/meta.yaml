@@ -1,5 +1,5 @@
 {% set name = "ephyviewer" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 253601e4c5f25011aac78c517cd5a1241998840867cd68db0d3e990ce7b99ba7
+  sha256: 0251f58d72a2a52d62f70fcb9c807434668e0f60667f0d27f3cfd8f3062b6455
 
 build:
   noarch: python
@@ -19,13 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.4
+    - python >=3.7
   run:
     - matplotlib-base >=2.0
     - numpy
     - pyqt
     - pyqtgraph >=0.10.0
-    - python >=3.4
+    - python >=3.7
     - scipy
   run_constrained:
     - python-neo >=0.6
@@ -36,6 +36,8 @@ test:
     - ephyviewer.datasource
     - ephyviewer.icons
     - ephyviewer.tests
+  commands:
+    - ephyviewer --help
 
 about:
   home: https://github.com/NeuralEnsemble/ephyviewer
