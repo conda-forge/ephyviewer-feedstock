@@ -31,15 +31,11 @@ requirements:
     - python-neo >=0.6
 
 test:
-  requires:
-    - python-neo >=0.6
   imports:
     - ephyviewer
     - ephyviewer.datasource
     - ephyviewer.icons
     - ephyviewer.tests
-  commands:
-    - ephyviewer --help  # requires neo
 
 about:
   home: https://github.com/NeuralEnsemble/ephyviewer
