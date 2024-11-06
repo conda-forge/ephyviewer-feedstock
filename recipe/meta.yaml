@@ -1,5 +1,5 @@
 {% set name = "ephyviewer" %}
-{% set version = "1.5.1" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c5208c2b7d658fb9af31580cf3572319eb519c207d48a0a44f9d3cdf0c28d71
+  sha256: 9775f8fbab056a7b2ac5949e668cf123589afff251f91473750379f5d8a9c1a0
 
 build:
   noarch: python
